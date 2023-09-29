@@ -1,17 +1,9 @@
-import React, { useState } from 'react';
-import { TVDisplay } from './TVDisplay/TVDisplay';
+import React from 'react';
 
 export function App() {
-  const [agreedToPlay, agree] = useState(false);
-
   return (
-    <div className="bg-black h-screen w-screen flex-center flex-col">
-      {!agreedToPlay && (
-        <button className="rounded bg-white text-black h-[50px] w-[200px]" onClick={() => agree(true)}>
-          Play.
-        </button>
-      )}
-      {agreedToPlay && <TVDisplay />}
+    <div className="flex-center h-screen">
+      <h1 className="font-bold text-3xl">Hello world</h1>
     </div>
   );
 }
